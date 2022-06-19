@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="Вхід"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Логін"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="Увійти" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Ще не зареєстровані?"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:text="Зареєструватися"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:onClick="getRegisterActivity"/>
+</LinearLayout>

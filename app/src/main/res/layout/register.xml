@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:text="Реєстрація"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ім'я"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvNameValidate"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Логін"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvLoginValidate"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etReenterPassword"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Повторіть пароль"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvPasswordValidate"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:text="Зареєструватися" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Вже зареєстровані?"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:onClick="getLoginActivity"
+        android:text="Увійти"
+        android:textAlignment="center"
+        android:textColor="#3F51B5" />
+</LinearLayout>
